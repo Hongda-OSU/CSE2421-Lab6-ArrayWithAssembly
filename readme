@@ -1,0 +1,53 @@
+Name: Hongda Lin
+Date: 10/4/2021
+
+I certify that I completed all of the work myself with no aid from anyone aside from the instructor or the undergraduate graders.
+
+For grader to modified:
+*****************************************************************************************************************
+(1): this is the string part where grader could modify more or less strings in myArr[]
+
+/* grader could add more/less strings here, string are label with str(i) */
+str1:
+	.string "I'm big fan of small world. No like big word or good grammar. Grammar too hard."
+str2:
+	.string "I really hate how nice the weather is getting."
+str3:
+	.string "What"
+str4:
+	.string "Amazing, isn't it? With just the slightest touch the material warps around the skin effortlessly."
+str5:
+	.string "Can you believe how much ligma is going around this year?"
+
+*****************************************************************************************************************
+(2): this is the array part where grader could add or remove the string label
+
+/* create an array of pointers myArr, grader could change how many strings stored in myArr[] */
+myArr:	/* char *myArr[5] = {str1, str2, str3, str4, str5}; */
+	.quad	str1
+	.quad	str2
+	.quad	str3
+	.quad	str4
+	.quad	str5
+
+*****************************************************************************************************************
+(3): this is the array size part where grader could change the integer base on how many strings are in myArr[]
+
+/* size is determined by how many strings in myArr[], default as 5 */
+size:
+	.long 5
+
+*****************************************************************************************************************
+(4): this is the choice part where grader could set program as default mode or bonus mode 
+
+/* grader choice for Part1, 0 as default, other as bonus */
+choiceP1:
+	.long 0
+/* grader choice for Part2, 0 as default, other as bonus */
+choiceP2:
+	.long 0
+/* grader choice for Part3, 0 as default, other as bonus */
+choiceP3:
+	.long 0
+
+*****************************************************************************************************************
